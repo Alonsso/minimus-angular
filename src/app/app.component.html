@@ -1,5 +1,5 @@
 <p>App</p>
-<app-home></app-home>
+<app-home [userData]="userData" (out)="outFunction($event)"></app-home>
 <router-outlet></router-outlet>
 
 <!-- Slide Menu-->

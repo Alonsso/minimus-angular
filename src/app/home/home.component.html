@@ -1,4 +1,7 @@
 <div class="">
   <app-weather-card></app-weather-card>
   <app-add-card></app-add-card>
+  <div *ngFor="let user of userData">
+    {{user.id}}. {{user.name}}
+  </div>
 </div>
