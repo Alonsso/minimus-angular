@@ -10,6 +10,8 @@ import { AppWeatherCardComponent } from './app-weather-card.component';
     imports: [
         CommonModule,
     ],
+    providers: [],
+    bootstrap: [],
     exports: [
         AppWeatherCardComponent,
     ],

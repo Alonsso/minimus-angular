@@ -1,16 +1,16 @@
-<!-- aside.side-menu__container[ngClass={'side-menu__container-active': showMenu}][(click)=toggleMenu()]>nav>((section>(span+div+div))+section+section) -->
-
 <p>App</p>
+<app-home></app-home>
 <router-outlet></router-outlet>
 
-<!-- <aside
+<!-- Slide Menu-->
+<aside
   class="side-menu__container"
-  [ngClass]="{ }"
+  [ngClass]="{ 'side-menu__container-active': showMenu }"
   (click)="toggleMenu()"
 >
   <nav
     class="slide-menu"
-    [ngClass]="{ }"
+    [ngClass]="{ 'slide-menu-active': showMenu }"
     (click)="$event.stopImmediatePropagation()"
   >
     <section class="menu-header">
@@ -30,18 +30,20 @@
     <section class="menu-body"></section>
     <section class="menu-footer"></section>
   </nav>
-</aside> -->
+</aside>
 
-<!-- <div class="root__container">
+<div class="root__container">
   <header
-    [ngClass]="{ 'main__header-dark':  }"
+    [ngClass]="{ 'main__header-dark': darkModeActive }"
     class="main__header"
   >
     <div class="left__section">
       <svg (click)="toggleMenu()" class="hamburger__icon" id="Menu_Burger_Icon">
+        <!-- hamburger icon svg code goes here-->
       </svg>
 
       <svg class="logo__icon">
+        <!-- logo svg code goes here-->
       </svg>
     </div>
 
@@ -57,11 +59,11 @@
           class="mode-toggle__input"
         />
         <span
-          [ngClass]="{  }"
+          [ngClass]="{ 'mode-toggle__bg-checked': darkModeActive }"
           class="mode-toggle__bg"
         ></span>
         <span
-          [ngClass]="{  }"
+          [ngClass]="{ 'mode-toggle__circle-checked': darkModeActive }"
           class="mode-toggle__circle"
         ></span>
       </label>
@@ -70,14 +72,20 @@
     </div>
   </header>
 
+  <!-- Main Content -->
+
+  <!--<router-outlet></router-outlet>-->
   <main class="main__container">
     <div
       class="main-container__bg"
-      [ngClass]="{   }"
+      [ngClass]="{ 'main-container__bg-dark': darkModeActive }"
     ></div>
     <router-outlet></router-outlet>
   </main>
+
+  <!-- Footer -->
+
   <footer class="main__footer">
     <small class="copyright__text">Copyright © 2018 Minimus</small>
   </footer>
-</div> -->
+</div>
