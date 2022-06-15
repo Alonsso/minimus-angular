@@ -1,3 +1,7 @@
+# minimus-angular
+
+### Build of Minimus app tutorial from https://github.com/hamedbaatour/Minimus using Angular
+
 # Minimus
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.0.1.
