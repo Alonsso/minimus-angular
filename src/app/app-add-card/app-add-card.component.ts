@@ -12,4 +12,6 @@ export class AppAddCardComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  darkMode: boolean = false;
+  
 }
